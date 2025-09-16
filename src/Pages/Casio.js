@@ -1,12 +1,9 @@
-import { useContext } from 'react';
-import { CartContext } from '../contexts/CartContext';
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import "./Watch.css";
 
-function Casio({ onAddToCart }) {
-    const { addToCart } = useContext(CartContext);
+function Casio() {
     const watches = [
         { id: "GM-2100-1ADR", name: "Đồng Hồ Nam CASIO G-SHOCK", type: "49.3 x 44.4 mm | Đồng hồ điện tử (Quartz)", price: "7.628.000₫", img: "/img/casio1.webp" },
         { id: "GAE-2100WE-3ADR", name: "Đồng Hồ Nam CASIO G-SHOCK", type: "48.5 x 45.4 mm | Đồng hồ điện tử (Quartz)", price: "6.800.000₫", img: "img/casio2.webp" },
@@ -42,10 +39,7 @@ function Casio({ onAddToCart }) {
                                     <Button
                                         variant="primary"
                                         className="watch-btn"
-                                        onClick={() => {
-                                            addToCart(watch);
-                                            if (onAddToCart) onAddToCart();// Gọi hàm mở popup cart nếu có
-                                        }}
+                                        
                                     >
                                         Thêm vào giỏ
                                     </Button>
