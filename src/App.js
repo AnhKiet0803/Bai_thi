@@ -1,17 +1,21 @@
 import { Routes, Route } from "react-router-dom";
 import './index.css';
-import Casio from "./Pages/Casio";
-
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import ObjectPage from "./Components/Objectspage";
+import SubjectsPage from "./Components/Subjectspage";
 function App() {
   return (
+    
       <div className="App">
-        <main>
+        <Header/>
+        <main className="main-content">
           <div className="container">
-            <Routes>
-              <Route path="/" element={<Casio/>} />
-            </Routes>  
+            <ObjectPage/>
+            <SubjectsPage/>
           </div>
         </main>
+        <Footer/> 
       </div>
   );
 }

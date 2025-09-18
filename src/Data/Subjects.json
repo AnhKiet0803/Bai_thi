@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "React JS",
+    "image": "/img/react.jpg"
+  },
+  {
+    "id": 2,
+    "name": "PHP",
+    "image": "/img/php.png"
+  },
+    {
+    "id": 3,
+    "name": "Python",
+    "image": "/img/python.png"
+  },
+  {
+    "id": 4,
+    "name": ".NET Core",
+    "image": "/img/netcore.png"
+  },
+  {
+    "id": 5,
+    "name": "Java",
+    "image": "/img/java.jpg"
+  }
+]
